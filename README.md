@@ -41,9 +41,9 @@ Make a new folder named `data` under the root directory. Download the datasets a
 For example, training the full model on Market1501 with GPU 0 and saving the log file and checkpoints to `logs/market-pclclip`:
 
 ```
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py -b 256 -d market1501 --iters 200 --eps 0.45 --logs-dir ./log/market1501
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py -b 256 -d market1501 --iters 100 --eps 0.45 --logs-dir ./log/market1501
 
-CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py -b 256 -d msmt17 --iters 200 --eps 0.7 --logs-dir ./log/msmt
+CUDA_VISIBLE_DEVICES=0,1,2,3 python train.py -b 256 -d msmt17 --iters 100 --eps 0.7 --logs-dir ./log/msmt
 ```
 
 ## Results
@@ -53,7 +53,7 @@ The results are on Market1501 (M) and MSMT17 (MS).
 | Methods | M | Link | MS | Link |
 | --- | -- | -- | -- | - |
 | CC + DCMIP | 86.7 (94.7) | - | 40.9 (69.3) | - |
-| CC + DCMIP (Reproduce) |  () | - |  () | - |
+| CC + DCMIP (Reproduce) |  86.7(94.5) | - |  40.7(69.4) | - |
 
 ## Note
 The model training requires 4 GPUs.
