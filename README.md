@@ -28,7 +28,7 @@ the proposed discrepant cluster proxies, we construct cluster contrastive loss t
 classes and decrease inter-class similarity. Extensive experiments on Market-1501 and MSMT17 demonstrate that the
 proposed method outperforms state-of-the-art approaches.
 
-![image](./imgs/DCMIP.png)
+![image](./figs/DCMIP.png)
 
 ## Datasets
 
