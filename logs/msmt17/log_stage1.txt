@@ -1,0 +1,14 @@
+==========
+Args:Namespace(dataset='msmt17', batch_size=256, workers=4, height=320, width=128, num_instances=16, eps=0.7, eps_gap=0.02, k1=30, k2=6, arch='resnet50', features=0, dropout=0, momentum=0.1, memorybank='CMhybrid', smooth=0, lr=0.00035, weight_decay=0.0005, epochs_stage1=40, epochs_stage2=50, iters_stage1=100, iters_stage2=100, step_size=20, seed=1, print_freq=100, eval_step=10, temp=0.05, data_dir='/data/tx/DCMIP/PCLHD-CCL/examples/data', logs_dir='../logs/msmt17/v3', pooling_type='gem', use_hard=False, no_cam=False)
+==========
+==> Load unlabeled dataset
+=> MSMT17_V1 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |  1041 |    32621 |        15
+  query    |  3060 |    11659 |        15
+  gallery  |  3060 |    82161 |        15
+  ----------------------------------------
+==> Create pseudo labels for unlabeled data

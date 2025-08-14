@@ -1,0 +1,298 @@
+==========
+Args:Namespace(dataset='market1501', batch_size=256, workers=4, height=320, width=128, num_instances=16, eps=0.45, eps_gap=0.02, k1=30, k2=6, arch='resnet50', features=0, dropout=0, momentum=0.1, memorybank='CMhybrid', smooth=0, lr=0.00035, weight_decay=0.0005, epochs_stage1=40, epochs_stage2=50, iters_stage1=100, iters_stage2=100, step_size=20, seed=1, print_freq=100, eval_step=10, temp=0.05, data_dir='/data/tx/DCMIP/PCLHD-CCL/examples/data', logs_dir='../logs/market1501/v0', pooling_type='gem', use_hard=False, no_cam=False)
+==========
+==> Load unlabeled dataset
+=> Market1501 loaded
+Dataset statistics:
+  ----------------------------------------
+  subset   | # ids | # images | # cameras
+  ----------------------------------------
+  train    |   751 |    12936 |         6
+  query    |   750 |     3368 |         6
+  gallery  |   751 |    15913 |         6
+  ----------------------------------------
+=> Loaded checkpoint '../logs/market1501/v0/model_best_stage1.pth.tar'
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 27.408981800079346
+Clustering criterion: eps: 0.450
+==> Statistics for epoch 0: 682 clusters
+Epoch: [0][100/100]	Time 1.426 (1.476)	Data 0.000 (0.033)	Loss cc 2.212 (1.437)	Loss ema 4.629 (3.108)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 21.554178476333618
+==> Statistics for epoch 1: 672 clusters
+Epoch: [1][100/100]	Time 1.750 (1.470)	Data 0.001 (0.026)	Loss cc 1.600 (1.385)	Loss ema 3.490 (2.990)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 20.22757077217102
+==> Statistics for epoch 2: 670 clusters
+Epoch: [2][100/100]	Time 1.395 (1.477)	Data 0.000 (0.032)	Loss cc 2.009 (1.328)	Loss ema 3.797 (2.912)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 15.04838514328003
+==> Statistics for epoch 3: 681 clusters
+Epoch: [3][100/100]	Time 1.428 (1.461)	Data 0.000 (0.028)	Loss cc 2.044 (1.274)	Loss ema 3.831 (2.836)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 28.173425436019897
+==> Statistics for epoch 4: 671 clusters
+Epoch: [4][100/100]	Time 1.446 (1.489)	Data 0.000 (0.039)	Loss cc 1.474 (1.270)	Loss ema 3.335 (2.796)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 25.10715675354004
+==> Statistics for epoch 5: 671 clusters
+Epoch: [5][100/100]	Time 1.445 (1.479)	Data 0.000 (0.029)	Loss cc 1.839 (1.214)	Loss ema 3.787 (2.703)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 33.193264961242676
+==> Statistics for epoch 6: 662 clusters
+Epoch: [6][100/100]	Time 1.426 (1.469)	Data 0.000 (0.030)	Loss cc 1.960 (1.198)	Loss ema 3.780 (2.672)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 22.511423587799072
+==> Statistics for epoch 7: 660 clusters
+Epoch: [7][100/100]	Time 1.422 (1.461)	Data 0.000 (0.032)	Loss cc 1.635 (1.198)	Loss ema 3.440 (2.628)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 15.054174184799194
+==> Statistics for epoch 8: 660 clusters
+Epoch: [8][100/100]	Time 1.461 (1.471)	Data 0.000 (0.034)	Loss cc 1.569 (1.178)	Loss ema 3.234 (2.616)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 21.666851043701172
+==> Statistics for epoch 9: 659 clusters
+Epoch: [9][100/100]	Time 1.693 (1.744)	Data 0.000 (0.036)	Loss cc 1.973 (1.129)	Loss ema 3.617 (2.545)
+Mean AP: 77.4%
+Mean AP: 84.5%
+
+ * Finished epoch   9  model mAP: 77.4%  model_ema mAP: 84.5%  best: 84.5% *
+
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 13.614924192428589
+==> Statistics for epoch 10: 659 clusters
+Epoch: [10][100/100]	Time 1.729 (1.726)	Data 0.000 (0.026)	Loss cc 1.698 (1.133)	Loss ema 3.349 (2.521)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 9.543235063552856
+==> Statistics for epoch 11: 651 clusters
+Epoch: [11][100/100]	Time 1.662 (1.730)	Data 0.000 (0.026)	Loss cc 2.092 (1.086)	Loss ema 3.943 (2.502)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.006701469421387
+==> Statistics for epoch 12: 651 clusters
+Epoch: [12][100/100]	Time 1.716 (1.728)	Data 0.000 (0.026)	Loss cc 1.816 (1.055)	Loss ema 3.693 (2.414)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 13.002703428268433
+==> Statistics for epoch 13: 658 clusters
+Epoch: [13][100/100]	Time 1.812 (1.729)	Data 0.000 (0.028)	Loss cc 1.937 (1.037)	Loss ema 3.616 (2.382)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.622053861618042
+==> Statistics for epoch 14: 653 clusters
+Epoch: [14][100/100]	Time 1.737 (1.731)	Data 0.000 (0.028)	Loss cc 1.842 (1.051)	Loss ema 3.633 (2.408)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.214465379714966
+==> Statistics for epoch 15: 655 clusters
+Epoch: [15][100/100]	Time 1.707 (1.732)	Data 0.000 (0.027)	Loss cc 1.372 (1.003)	Loss ema 2.994 (2.353)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.359738826751709
+==> Statistics for epoch 16: 660 clusters
+Epoch: [16][100/100]	Time 1.660 (1.730)	Data 0.000 (0.029)	Loss cc 1.750 (0.973)	Loss ema 3.292 (2.274)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.658454895019531
+==> Statistics for epoch 17: 654 clusters
+Epoch: [17][100/100]	Time 1.693 (1.747)	Data 0.000 (0.033)	Loss cc 1.842 (0.989)	Loss ema 3.627 (2.271)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 15.171870470046997
+==> Statistics for epoch 18: 654 clusters
+Epoch: [18][100/100]	Time 1.695 (1.731)	Data 0.000 (0.028)	Loss cc 1.637 (0.963)	Loss ema 3.267 (2.246)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 17.306663513183594
+==> Statistics for epoch 19: 650 clusters
+Epoch: [19][100/100]	Time 1.709 (1.738)	Data 0.000 (0.030)	Loss cc 1.354 (0.922)	Loss ema 2.670 (2.185)
+Mean AP: 81.2%
+Mean AP: 86.5%
+
+ * Finished epoch  19  model mAP: 81.2%  model_ema mAP: 86.5%  best: 86.5% *
+
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 21.9890615940094
+==> Statistics for epoch 20: 650 clusters
+Epoch: [20][100/100]	Time 1.676 (1.738)	Data 0.000 (0.032)	Loss cc 0.982 (0.775)	Loss ema 2.367 (2.044)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 13.55235767364502
+==> Statistics for epoch 21: 654 clusters
+Epoch: [21][100/100]	Time 1.708 (1.738)	Data 0.000 (0.037)	Loss cc 0.917 (0.698)	Loss ema 2.421 (1.849)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 16.12881636619568
+==> Statistics for epoch 22: 657 clusters
+Epoch: [22][100/100]	Time 1.668 (1.734)	Data 0.000 (0.034)	Loss cc 0.984 (0.670)	Loss ema 2.375 (1.810)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 13.646817445755005
+==> Statistics for epoch 23: 654 clusters
+Epoch: [23][100/100]	Time 1.680 (1.736)	Data 0.000 (0.031)	Loss cc 0.881 (0.636)	Loss ema 2.302 (1.736)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 16.63682723045349
+==> Statistics for epoch 24: 658 clusters
+Epoch: [24][100/100]	Time 1.750 (1.740)	Data 0.000 (0.034)	Loss cc 0.957 (0.605)	Loss ema 2.205 (1.686)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 14.880709409713745
+==> Statistics for epoch 25: 659 clusters
+Epoch: [25][100/100]	Time 1.702 (1.741)	Data 0.000 (0.036)	Loss cc 0.717 (0.621)	Loss ema 2.167 (1.692)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 15.77723240852356
+==> Statistics for epoch 26: 660 clusters
+Epoch: [26][100/100]	Time 1.692 (1.739)	Data 0.000 (0.034)	Loss cc 0.968 (0.607)	Loss ema 2.728 (1.661)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.994925260543823
+==> Statistics for epoch 27: 658 clusters
+Epoch: [27][100/100]	Time 1.417 (1.451)	Data 0.000 (0.026)	Loss cc 1.211 (0.585)	Loss ema 2.713 (1.633)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.620206832885742
+==> Statistics for epoch 28: 661 clusters
+Epoch: [28][100/100]	Time 1.408 (1.456)	Data 0.000 (0.027)	Loss cc 0.971 (0.592)	Loss ema 2.756 (1.626)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 10.951886415481567
+==> Statistics for epoch 29: 660 clusters
+Epoch: [29][100/100]	Time 1.424 (1.449)	Data 0.000 (0.026)	Loss cc 0.683 (0.573)	Loss ema 2.064 (1.605)
+Mean AP: 85.9%
+Mean AP: 86.7%
+
+ * Finished epoch  29  model mAP: 85.9%  model_ema mAP: 86.7%  best: 86.7% *
+
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.905419111251831
+==> Statistics for epoch 30: 659 clusters
+Epoch: [30][100/100]	Time 1.398 (1.452)	Data 0.000 (0.025)	Loss cc 0.542 (0.539)	Loss ema 1.696 (1.526)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.183504343032837
+==> Statistics for epoch 31: 661 clusters
+Epoch: [31][100/100]	Time 1.439 (1.457)	Data 0.000 (0.027)	Loss cc 0.764 (0.569)	Loss ema 1.946 (1.568)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 10.954523086547852
+==> Statistics for epoch 32: 660 clusters
+Epoch: [32][100/100]	Time 1.411 (1.460)	Data 0.000 (0.032)	Loss cc 0.673 (0.557)	Loss ema 2.051 (1.562)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 10.165398120880127
+==> Statistics for epoch 33: 661 clusters
+Epoch: [33][100/100]	Time 1.423 (1.447)	Data 0.000 (0.026)	Loss cc 0.535 (0.562)	Loss ema 2.053 (1.567)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 10.642745733261108
+==> Statistics for epoch 34: 662 clusters
+Epoch: [34][100/100]	Time 1.440 (1.457)	Data 0.000 (0.026)	Loss cc 0.560 (0.529)	Loss ema 1.896 (1.498)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.701560974121094
+==> Statistics for epoch 35: 662 clusters
+Epoch: [35][100/100]	Time 1.409 (1.452)	Data 0.000 (0.027)	Loss cc 0.841 (0.524)	Loss ema 2.140 (1.490)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 10.943068265914917
+==> Statistics for epoch 36: 662 clusters
+Epoch: [36][100/100]	Time 1.428 (1.459)	Data 0.000 (0.026)	Loss cc 0.552 (0.521)	Loss ema 1.993 (1.476)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.971815586090088
+==> Statistics for epoch 37: 659 clusters
+Epoch: [37][100/100]	Time 1.433 (1.455)	Data 0.000 (0.027)	Loss cc 0.525 (0.522)	Loss ema 1.700 (1.475)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.739497900009155
+==> Statistics for epoch 38: 660 clusters
+Epoch: [38][100/100]	Time 1.410 (1.453)	Data 0.000 (0.026)	Loss cc 0.768 (0.499)	Loss ema 1.922 (1.425)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 13.323718547821045
+==> Statistics for epoch 39: 661 clusters
+Epoch: [39][100/100]	Time 1.439 (1.453)	Data 0.000 (0.025)	Loss cc 0.769 (0.540)	Loss ema 1.973 (1.469)
+Mean AP: 85.6%
+Mean AP: 86.3%
+
+ * Finished epoch  39  model mAP: 85.6%  model_ema mAP: 86.3%  best: 86.7%
+
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.597756385803223
+==> Statistics for epoch 40: 663 clusters
+Epoch: [40][100/100]	Time 1.427 (1.460)	Data 0.000 (0.027)	Loss cc 0.712 (0.480)	Loss ema 1.844 (1.406)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.720487117767334
+==> Statistics for epoch 41: 661 clusters
+Epoch: [41][100/100]	Time 1.448 (1.454)	Data 0.000 (0.026)	Loss cc 0.651 (0.496)	Loss ema 1.825 (1.433)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 11.118966579437256
+==> Statistics for epoch 42: 661 clusters
+Epoch: [42][100/100]	Time 1.425 (1.460)	Data 0.000 (0.027)	Loss cc 0.548 (0.485)	Loss ema 1.664 (1.397)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 12.140268325805664
+==> Statistics for epoch 43: 662 clusters
+Epoch: [43][100/100]	Time 1.402 (1.452)	Data 0.000 (0.024)	Loss cc 0.690 (0.488)	Loss ema 1.911 (1.399)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 10.635551929473877
+==> Statistics for epoch 44: 661 clusters
+Epoch: [44][100/100]	Time 1.428 (1.456)	Data 0.000 (0.026)	Loss cc 0.687 (0.495)	Loss ema 1.898 (1.401)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 14.5435152053833
+==> Statistics for epoch 45: 662 clusters
+Epoch: [45][100/100]	Time 1.396 (1.454)	Data 0.000 (0.025)	Loss cc 0.894 (0.479)	Loss ema 2.113 (1.393)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 30.774532794952393
+==> Statistics for epoch 46: 662 clusters
+Epoch: [46][100/100]	Time 1.426 (1.459)	Data 0.000 (0.026)	Loss cc 0.748 (0.472)	Loss ema 1.950 (1.364)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 23.492082118988037
+==> Statistics for epoch 47: 662 clusters
+Epoch: [47][100/100]	Time 1.426 (1.455)	Data 0.000 (0.025)	Loss cc 0.893 (0.484)	Loss ema 2.102 (1.376)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 18.229608058929443
+==> Statistics for epoch 48: 661 clusters
+Epoch: [48][100/100]	Time 1.441 (1.454)	Data 0.000 (0.028)	Loss cc 0.576 (0.481)	Loss ema 1.773 (1.400)
+==> Create pseudo labels for unlabeled data
+Computing jaccard distance...
+Jaccard distance computing time cost: 28.810957670211792
+==> Statistics for epoch 49: 662 clusters
+Epoch: [49][100/100]	Time 1.454 (1.456)	Data 0.000 (0.029)	Loss cc 0.822 (0.482)	Loss ema 2.096 (1.374)
+Mean AP: 86.0%
+Mean AP: 86.3%
+
+ * Finished epoch  49  model mAP: 86.0%  model_ema mAP: 86.3%  best: 86.7%
+
+==> Test with the best model:
+=> Loaded checkpoint '../logs/market1501/v0/model_best_stage2.pth.tar'
+Mean AP: 86.7%
+CMC Scores:
+  top-1          94.5%
+  top-5          98.1%
+  top-10         98.9%
+Total running time:  3:02:22.383879
