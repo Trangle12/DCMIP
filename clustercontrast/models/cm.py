@@ -93,7 +93,7 @@ class CM_Hybrid(autograd.Function):
 def cm_hybrid(inputs, indexes, features, momentum=0.5):
     return CM_Hybrid.apply(inputs, indexes, features, torch.Tensor([momentum]).to(inputs.device))
 
-class CM_Hard_PCLHD(autograd.Function):
+class CM_Hard(autograd.Function):
 
     @staticmethod
     @amp.custom_fwd
@@ -133,8 +133,8 @@ class CM_Hard_PCLHD(autograd.Function):
         return grad_inputs, None, None, None, None
 
 
-def cm_hard_pclhd(inputs, indexes, features, momentum=0.5, num_instances=16):
-    return CM_Hard_PCLHD.apply(inputs, indexes, features, torch.Tensor([momentum]).to(inputs.device), num_instances)
+def cm_hard(inputs, indexes, features, momentum=0.5, num_instances=16):
+    return CM_Hard.apply(inputs, indexes, features, torch.Tensor([momentum]).to(inputs.device), num_instances)
 
 
 class ClusterMemory(nn.Module, ABC):
