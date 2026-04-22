@@ -4,7 +4,6 @@ import time
 import torch
 from torch.cuda import amp
 
-from .tools.contrastive_loss import *
 from .utils.meters import AverageMeter
 import torch.nn.functional as F
 
