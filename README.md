@@ -15,9 +15,6 @@ conda create -n dcmip python=3.9
 conda activate dcmip
 pip install -r requirements.txt
 ```
-## Overview
-
-![image](./figs/DCMIP.png)
 
 ## Datasets
 
